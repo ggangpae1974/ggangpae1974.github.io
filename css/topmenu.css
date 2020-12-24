@@ -1,0 +1,75 @@
+
+.container{
+  /* height:10vh; */
+  margin:auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-items:center ;
+  justify-content: space-between;
+  background-color: #338a3e;
+ }
+
+.opt1{
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+.opt2{
+  display: flex;
+  flex-wrap: wrap; 
+  flex-direction: row;    
+}
+.opt3{
+ display: flex;
+ flex-wrap: wrap; 
+ flex-direction: row; 
+}
+.opt4 {
+ margin-right: 20px;    
+}      
+ul {
+ list-style: none;
+ padding: 0;
+}
+li {
+ font-size: 1.2em;    
+}
+li:hover{
+ background-color: #97ed98;
+ transition: background-color 1s ease;
+ border-radius: 5px;
+}
+.opt2 li {
+padding: 0px 20px;
+}
+.opt3 li {
+padding: 0px 2px;
+}
+i.fab.fa-studiovinari{
+ font-size: 1.2em;
+}
+.fas fa-bars{    
+ font-size: 1.2em;    
+}
+@media screen and (max-width:767px){
+ .container{        
+   flex-direction: column;
+ }
+ .opt2 {
+   flex-direction: column;
+ }
+ .opt2 li{
+   padding: 10px 20px;
+ }
+}
+@media screen and (max-width:1023px){
+ .container{        
+   flex-direction: column;
+ }
+ /* .opt2 {
+   flex-direction: column;
+ } */
+ .opt2 li{
+   padding: 10px 20px;
+ }
+}
